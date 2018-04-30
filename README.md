@@ -1,1 +1,1 @@
-# Lokaverkefni-VEF-2VH05BU
+# Lokaverkefni-VEF2VH05BU
