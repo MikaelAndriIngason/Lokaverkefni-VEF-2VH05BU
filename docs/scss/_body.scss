@@ -1,0 +1,111 @@
+$base-value: 1em;
+
+body{
+	max-width: 60em;
+	font-family: arial;
+	background-color: #f2f2f2;
+	margin: 0 auto;
+
+	display: grid;
+	grid-template-rows: 150px 3fr 200px 51px;
+	grid-template-columns: 1fr;
+	grid-template-areas: "header"
+	                     "section"
+	                     "footer"
+	                     "nav";
+
+	@media screen and (min-width: 37.5em) {
+	
+		grid-template-rows: 50px 150px .5fr 200px;
+		grid-template-areas: "nav"
+							 "header"
+	                     	 "section"
+	                     	 "footer";
+
+	} 
+	h2, h3{
+		font-family: 'Monda', sans-serif;
+	}
+
+	header{
+		font-family: 'Monda', sans-serif;
+		padding: 1em;
+		grid-area: header;
+		background-color: #595959;
+		color: white;
+		display: flex;
+		justify-content: center;
+
+		h1{
+			align-self: center;
+		}
+		img{
+			padding: 0 2em 0 0;
+			height: 68px;
+			width: 31.3px;
+			align-self: center;
+		}
+	}
+	nav{
+		grid-area: nav;
+		background-color: #c67add;
+	}
+	footer{
+		padding: 1em;
+		grid-area: footer;
+		background-color: #595959;
+		text-align: center;
+		color: white;
+	}
+	picture img{
+		width: 100%;
+	}
+	section{
+		margin: 0 auto;
+		grid-area: section;
+		display: grid;
+		grid-template-rows: 1fr 0 0;
+		grid-template-columns: 1fr;
+		grid-template-areas: "center"
+						     "left"
+	                         "right";
+
+	    @media screen and (min-width: 37.5em) {
+	    
+	    	grid-template-rows: 1fr 0;
+ 			grid-template-columns: 1fr 1fr;
+			grid-template-areas: "center center"
+ 				                 "left right";
+
+	    }
+
+	    @media screen and (min-width: 48em){
+
+	    	grid-template-rows: 1fr;
+			grid-template-columns: 1fr 3.5fr 1fr;
+			grid-template-areas: "left center right"
+ 			                     "left center right";
+
+	    }        
+
+		article{
+			padding: 1em;
+			background-color: white;
+			grid-area: center;
+		}
+		aside{
+			padding: 1em;
+			background-color: #e2e2e2;
+			border: 1px solid #cecece;
+			@media screen and (min-width: 48em){
+				border: none;
+			}
+			.right{
+				grid-area: right;
+			}
+			.left{
+				grid-area: left;
+			}
+		}
+	}
+}

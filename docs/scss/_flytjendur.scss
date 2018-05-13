@@ -1,0 +1,36 @@
+.flytjandi_r{
+	padding: 2em 0 2em 0;
+	display: grid;
+	grid-template-columns: 150px, 1fr;
+	grid-template-areas: "thumb desc";
+	img{
+		grid-area: thumb;
+		border-radius: 50%;
+		height: 150px;
+	}
+	.desc{
+		h2{
+			margin: 0; 
+		}
+		grid-area: desc;
+		padding: 0 0 0 1em;
+	}
+}
+.flytjandi_l{
+	padding:1em;
+	display: grid;
+	grid-template-columns: 1fr, 150px;
+	grid-template-areas: "desc thumb";
+	img{
+		grid-area: thumb;
+		border-radius: 50%;
+		height: 150px;
+	}
+	.desc{
+		h2{
+			margin: 0; 
+		}
+		grid-area: desc;
+		padding: 0 1em 0 0;
+	}
+}

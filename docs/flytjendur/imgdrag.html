@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lokaverkefni</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../icons.css">
+	<link rel="icon" href="../Logo.png">
+</head>
+<body>
+	<header>
+		<img src="../Logo2.svg">
+		<h1>MAJOR MÚSÍK</h1>
+	</header>
+
+	<input type="checkbox" id="menu-toggle">
+	<div class="navlab">
+		<label for="menu-toggle">Menu &#9776;</label>
+	</div>
+	<nav class="topnav">
+		<ul class="topmenu">
+			<li><a href="../index.html">Forsíða</a></li>
+			<li><a href="../tonleikar.html">Útgáfutónleikar</a></li>
+			<li><a href="../flytjendur.html">Flytjendur</a></li>
+			<li><a href="../umokkur.html">Um Okkur</a></li>
+		</ul>
+	</nav>
+
+	<input type="checkbox" id="modal-toggle">
+
+	<section>
+		<article>
+			<h2>Imagine Dragons</h2>
+			<hr>
+			<div class="info">
+				<img src="../myndir/Imagine Dragons.jpg">
+				<div class="desc">
+					<p>Imagine Dragons er Amerísk popprockhljómsveit frá Las Vegas. Hún samanstendur af söngvaranum Dan Reynolds, gítarleikaranum Wayne Sermon, bassaleikaranum og hljómborðsleikaranum Ben McKee og trommaranum Daniel Platzman. Þeir hlautu verðlaun fyrir plötuna sína "Night Visions", þar var meðal "Radioactive" og "Demons". Billboard setti þá efst á "Year In Rock" bæði árið 2013 og 2017, og voru nefndir "Breakthrough Band of 2013" og "Biggest Band of 2017".</p>
+				</div>
+			</div>
+
+			<h3>Lagalisti</h3>
+			<hr>
+
+			<table>
+				<thead>
+					<tr>
+						<th>Nafn</th>
+						<th>Albúm</th>
+						<th>lengd</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td>Radioactive</td>
+						<td>Night Visions</td>
+						<td>4:22</td>
+					</tr>
+	
+					<tr>
+						<td>Demons</td>
+						<td>Night Visions</td>
+						<td>3:57</td>
+					</tr>
+	
+					<tr>
+						<td>Shots</td>
+						<td>Smoke + Mirrors</td>
+						<td>4:02</td>
+					</tr>
+	
+					<tr>
+						<td>I Bet My Life</td>
+						<td>Smoke + Mirrors</td>
+						<td>3:34</td>
+					</tr>
+
+					<tr>
+						<td>Thunder</td>
+						<td>Evolve</td>
+						<td>3:24</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<h3>Lag</h3>
+			<hr>
+
+			<iframe width="100%" height="315" src="https://www.youtube.com/embed/ktvTqknDobU?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+			<h3>Aðdáendaklúbbur</h3>
+			<hr>			
+			<div class="skraning">
+				<label for="modal-toggle">Skráning í aðdáendaklúbb</label>
+			</div>
+		</article>
+		
+		<aside class="right">
+		</aside>
+
+		<aside class="left">
+		</aside>
+
+	</section>
+
+	<dialog open>
+		<label for="modal-toggle">X</label>
+		<h1>Imagine Dragons - klúbbur</h1>
+		<hr>
+		<p>Skráðu þig inn til að fá nýjustu fréttirnar og upplýsingarnar frá Imagine Dragons strax og þær koma.</p>
+		<hr><br>
+		<form>
+			Nafn:<br>
+			<input type="text"required placeholder="Sláðu inn nafn"><br><br>
+			Lykilorð:<br> 
+			<input type="password" required placeholder="Sláðu inn lykilorð"><br><br>
+			Netfang:<br> 
+			<input type="email" required placeholder="Sláðu inn netfang"><br><br>
+			<button type="submit">Skrá inn</button>
+		</form>
+	</dialog>
+	<div class="backdrop"></div>
+
+	<footer>
+		<p>&copy; 2018 Mikael Andri Ingason</p>
+		<div class="media-links">
+			<a href="https://twitter.com/" target="_blank"><span class="icon-twitter"></span></a>
+			<a href="https://youtube.com/" target="_blank"><span class="icon-youtube"></span></a>
+			<a href="https://instagram.com/" target="_blank"><span class="icon-instagram"></span></a>
+			<a href="https://facebook.com/" target="_blank"><span class="icon-facebook"></span></a>
+		</div>
+	</footer>
+</body>
+</html>

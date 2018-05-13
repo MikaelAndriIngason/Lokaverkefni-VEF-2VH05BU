@@ -1,0 +1,105 @@
+/* Navigation */
+
+.topnav{
+	z-index: 1;
+	position: fixed;
+	bottom: -153px;
+	width: 100%;
+	transition: bottom .4s;
+}
+a{
+	color: #c67add;
+	text-decoration: none;
+	font-weight: bold;
+}
+nav a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 1em 0;
+	text-align: center;
+}
+nav a:hover {
+	color: #c67add;
+	background: white; 
+}
+#menu-toggle:checked ~ .topnav{
+	bottom: 51px;
+}
+#menu-toggle{
+	display: none;
+}
+.navlab{
+	label {
+		z-index: 2;
+		background-color: #9b61ad;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		height: 51px;
+		text-align: center;
+		cursor: pointer;
+		line-height: 51px;
+		color: white;
+		font-weight: bold;
+	}
+}
+.topmenu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+
+	@media screen and (min-width: 37.5em){
+		display: flex;
+		justify-content: center;
+	}
+}
+.media-links a{
+	display: inline-block;
+	width: 2.5em;
+	height: 2.5em;
+	text-align: center;
+	line-height: 2.5em;
+	border-radius: 50%;
+	color: white;
+}
+.media-links a:nth-child(1){
+	background-color: #55acee;
+}
+.media-links a:nth-child(2){
+	background-color: #e52d27;
+}
+.media-links a:nth-child(3){
+	background-color: #f7a164;
+}
+.media-links a:nth-child(4){
+	background-color: #3b5998;
+}
+.media-links a:hover{
+	background-color: black;
+}
+@media screen and (min-width: 37.5em){
+	.topnav{
+		position: static;
+	}
+	nav li{
+		width: 150px;
+	}
+	label {
+		display: none;
+	}
+}
+@media screen and (min-width: 48em){
+	nav li{
+		width: 200px;
+	}
+	.media-links{
+		position: absolute;
+		left: 0;
+		top: 200px;
+	}
+	.media-links a{
+		display: block;
+		border-radius: 0 50% 50% 0;
+	}
+}
